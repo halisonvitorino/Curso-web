@@ -34,7 +34,7 @@
 			<br />
 			<br />			
 			
-			<h:dataTable var="obj" value="#{agendaContatoBean.contatos}" border="1" width="100%">
+			<h:dataTable var="obj" value="#{agendaContatoBean.contatos}" border="3" width="50%">
 				<h:column>
 					<f:facet name="header">
 						<h:outputText value="Nome" />
