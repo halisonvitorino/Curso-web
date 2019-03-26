@@ -3,7 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
 	version="2.2">
-	
+
 	<managed-bean>
 		<managed-bean-name>agendaContatoBean</managed-bean-name>
 		<managed-bean-class>com.algaworks.dwjsf.visao.AgendaContatoBean</managed-bean-class>
@@ -11,10 +11,10 @@
 	</managed-bean>
 
 	<navigation-rule>
-	<display-name>first_page.xhtml</display-name>
-    <from-view-id>/first_page.xhtml</from-view-id>
-		<navigation-case>
-			<from-outcome>ajuda</from-outcome>
+		<display-name>first_page.xhtml</display-name>
+			<from-view-id>/first_page.xhtml</from-view-id>
+				<navigation-case>
+					<from-outcome>ajuda</from-outcome>
 			<to-view-id>/ajudaOnline.jsp</to-view-id>
 		</navigation-case>
 	</navigation-rule>
