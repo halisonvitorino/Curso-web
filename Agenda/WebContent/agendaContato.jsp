@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="f" uri="http://java.sun.com/jsf/core"%>
 <%@ taglib prefix="h" uri="http://java.sun.com/jsf/html"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -30,11 +29,12 @@
 			<br />
 			
 			<h:commandButton actionListener="#{agendaContatoBean.incluirContato}" value="Incluir" />
+			<h:commandButton  value="Ajuda"  action="ajuda"/> 
 			
 			<br />
 			<br />			
 			
-			<h:dataTable var="obj" value="#{agendaContatoBean.contatos}" border="1" width="100%">
+			<h:dataTable var="obj" value="#{agendaContatoBean.contatos}" border="3" width="50%">
 				<h:column>
 					<f:facet name="header">
 						<h:outputText value="Nome" />

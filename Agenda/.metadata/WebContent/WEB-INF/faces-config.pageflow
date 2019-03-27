@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15535627767100" configfile="/Agenda/WebContent/WEB-INF/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15535627767100" configfile="/Agenda/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="agendaContato" id="pf155365097147621" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf155365097147622" path="/agendaContato.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="ajudaOnline" id="pf155365097147623" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf155365097147622" path="/ajudaOnline.jsp"/>
+  <links id="pf155365097147622" target="pf155365097147623" source="pf155365097147621" outcome="ajuda"/>
+</pageflow:Pageflow>
