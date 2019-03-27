@@ -11,12 +11,11 @@
 	</managed-bean>
 
 	<navigation-rule>
-		<display-name>first_page.xhtml</display-name>
-			<from-view-id>/first_page.xhtml</from-view-id>
-				<navigation-case>
-					<from-outcome>ajuda</from-outcome>
-			<to-view-id>/ajudaOnline.jsp</to-view-id>
-		</navigation-case>
+		<from-view-id>/agendaContato.jsp</from-view-id>
+			<navigation-case>
+				<from-outcome>ajuda</from-outcome>
+				<to-view-id>/ajudaOnline.jsp</to-view-id>
+			</navigation-case>
 	</navigation-rule>
 
 </faces-config>
