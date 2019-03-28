@@ -27,9 +27,10 @@
 			
 			<br />
 			
-			<h:commandButton actionListener="#{inscricaoBean.inscrever}" value="Inscrever" />
+			<h:commandButton action="#{inscricaoBean.inscrever}" value="Inscreva-se" />
 		
 		</h:form>	
-</body>
+     </body>
+     
 </f:view>
 </html>

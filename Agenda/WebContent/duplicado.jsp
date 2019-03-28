@@ -5,17 +5,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
+<f:view>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Insert title here</title>
 </head>
-<body>
-	<f:view>
+	<body>
+		
 
-		<h:form>
-			<h1>Registro duplicado</h1>
-		</h:form>
+			<h:form>
+				<h1>Registro duplicado</h1>
+			</h:form>
 
+		
+	</body>
 	</f:view>
-</body>
 </html>

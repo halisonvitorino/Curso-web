@@ -16,7 +16,6 @@ public class InscricaoBean {
 		
 		boolean duplicado = false;
 		if (duplicado) {
-			
 			return "duplicado";
 		}
 		
