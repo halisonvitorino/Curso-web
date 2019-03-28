@@ -29,6 +29,7 @@
 			<br />
 			
 			<h:commandButton actionListener="#{agendaContatoBean.incluirContato}" value="Incluir" />
+			
 			<h:commandButton  value="Ajuda"  action="ajuda"/> 
 			
 			<br />

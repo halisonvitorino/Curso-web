@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15536869036206" configfile="/Agenda/WebContent/WEB-INF/faces-config.xml">
-  <nodes xsi:type="pageflow:PFPage" name="agendaContato" x="120" y="72" id="pf15536874104387" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf15536874104388" path="/agendaContato.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="ajudaOnline" x="1116" y="72" id="pf15536874104389" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15536874104388" path="/ajudaOnline.jsp"/>
-  <links id="pf15536874104388" target="pf15536874104389" source="pf15536874104387" outcome="ajuda"/>
+  <nodes xsi:type="pageflow:PFPage" name="ajudaOnline" x="744" y="240" id="pf155372010773319" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" outlinks="pf155372027065320" inlinks="pf155372027065321" path="ajudaOnline.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="agendaContato" x="156" y="252" id="pf155372027065322" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf155372027065321" inlinks="pf155372027065320" path="agendaContato.jsp"/>
+  <links id="pf155372027065320" target="pf155372027065322" source="pf155372010773319" outcome="voltar"/>
+  <links id="pf155372027065321" target="pf155372010773319" source="pf155372027065322" outcome="ajuda"/>
 </pageflow:Pageflow>

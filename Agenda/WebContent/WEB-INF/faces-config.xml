@@ -11,11 +11,19 @@
 	</managed-bean>
 
 	<navigation-rule>
-		<from-view-id>/agendaContato.jsp</from-view-id>
+		<from-view-id>agendaContato.jsp</from-view-id>
 			<navigation-case>
 				<from-outcome>ajuda</from-outcome>
-				<to-view-id>/ajudaOnline.jsp</to-view-id>
+				<to-view-id>ajudaOnline.jsp</to-view-id>
 			</navigation-case>
 	</navigation-rule>
 
+	<navigation-rule>
+		<from-view-id>ajudaOnline.jsp</from-view-id>
+			<navigation-case>
+				<from-outcome>voltar</from-outcome>
+				<to-view-id>agendaContato.jsp</to-view-id>
+			</navigation-case>
+	</navigation-rule>
+	
 </faces-config>

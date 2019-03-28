@@ -11,6 +11,9 @@
 <body>
 	<f:view>
 		<h1>halison</h1>
+		<br />
+		<h:commandButton  value="Voltar"  action="voltar"/> 
+		<br />
 	</f:view>
 </body>
 </html>
