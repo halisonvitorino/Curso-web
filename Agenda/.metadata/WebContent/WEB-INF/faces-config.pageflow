@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15536869036206" configfile="/Agenda/WebContent/WEB-INF/faces-config.xml">
-  <nodes xsi:type="pageflow:PFPage" name="ajudaOnline" x="744" y="240" id="pf155372010773319" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" outlinks="pf155372027065320" inlinks="pf155372027065321" path="ajudaOnline.jsp"/>
-  <nodes xsi:type="pageflow:PFPage" name="agendaContato" x="156" y="252" id="pf155372027065322" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf155372027065321" inlinks="pf155372027065320" path="agendaContato.jsp"/>
-  <links id="pf155372027065320" target="pf155372027065322" source="pf155372010773319" outcome="voltar"/>
-  <links id="pf155372027065321" target="pf155372010773319" source="pf155372027065322" outcome="ajuda"/>
+  <nodes xsi:type="pageflow:PFPage" name="ajudaOnline" x="1404" y="245" id="pf155372010773319" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" outlinks="pf155372027065320" inlinks="pf155372027065321" path="ajudaOnline.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="agendaContato" x="1008" y="240" id="pf155372027065322" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf155372027065321" inlinks="pf155372027065320" path="agendaContato.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="inscricao" x="396" y="216" id="pf155377968757323" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf155378377579944 pf155378463778946" path="inscricao.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="sucesso" id="pf155378377579945" referenceLink="//@navigationRule.3/@navigationCase.0/@toViewId|" inlinks="pf155378377579944" path="sucesso.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="duplicado" id="pf155378463778947" referenceLink="//@navigationRule.2/@navigationCase.0/@toViewId|" inlinks="pf155378463778946" path="duplicado.jsp"/>
+  <links id="pf155372027065320" target="pf155372027065322" source="pf155372010773319" outcome="voltar" redirect="true">
+    <bendPoints d1Width="-306" d1Height="134" d2Width="273" d2Height="122"/>
+  </links>
+  <links id="pf155372027065321" target="pf155372010773319" source="pf155372027065322" outcome="ajuda" redirect="true">
+    <bendPoints d1Width="284" d1Height="-192" d2Width="-295" d2Height="-180"/>
+  </links>
+  <links id="pf155378377579944" target="pf155378377579945" source="pf155377968757323" outcome="sucesso" redirect="true"/>
+  <links id="pf155378463778946" target="pf155378463778947" source="pf155377968757323" outcome="duplicado" redirect="true"/>
 </pageflow:Pageflow>

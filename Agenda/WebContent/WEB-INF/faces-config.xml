@@ -10,20 +10,46 @@
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
 
+	<managed-bean>
+		<managed-bean-name>inscricaoBean</managed-bean-name>
+		<managed-bean-class>com.algaworks.dwjsf.visao.InscricaoBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
 	<navigation-rule>
 		<from-view-id>agendaContato.jsp</from-view-id>
-			<navigation-case>
-				<from-outcome>ajuda</from-outcome>
-				<to-view-id>ajudaOnline.jsp</to-view-id>
-			</navigation-case>
+		<navigation-case>
+			<from-outcome>ajuda</from-outcome>
+			<to-view-id>ajudaOnline.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
 	</navigation-rule>
 
 	<navigation-rule>
 		<from-view-id>ajudaOnline.jsp</from-view-id>
-			<navigation-case>
-				<from-outcome>voltar</from-outcome>
-				<to-view-id>agendaContato.jsp</to-view-id>
-			</navigation-case>
+		<navigation-case>
+			<from-outcome>voltar</from-outcome>
+			<to-view-id>agendaContato.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
 	</navigation-rule>
-	
+
+	<navigation-rule>
+		<from-view-id>inscricao.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>duplicado</from-outcome>
+			<to-view-id>duplicado.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>inscricao.jsp</from-view-id>
+		<navigation-case>
+			<from-outcome>sucesso</from-outcome>
+			<to-view-id>sucesso.jsp</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
+
 </faces-config>
