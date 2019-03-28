@@ -13,7 +13,7 @@ public class ConsultaClienteBean {
 
 	public void consultar(ActionEvent event) {
 
-		this.getClientes().clear();
+		//this.getClientes().clear();
 		this.getClientes().add(new Cliente(1, "Halison", "Brasilia"));
 		this.getClientes().add(new Cliente(2, "Karla", "Goiania"));
 		this.getClientes().add(new Cliente(3, "Cristina Melo", "São Paulo"));

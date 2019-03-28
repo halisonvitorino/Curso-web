@@ -16,7 +16,7 @@ pageEncoding="ISO-8859-1"%>
 		<h:form id="frm">
 			<h:commandButton value	="Consultar" actionListener="#{consultaClienteBean.consultar}"/>
 			
-			<h:dataTable value		="#{consultaClientesBean.clientes}" 
+			<h:dataTable value		="#{consultaClienteBean.clientes}" 
 			             var		="item" 
 			             border		="1" 
 			             rendered	= "#{not empty consultaClienteBean.clientes}">

@@ -5,7 +5,7 @@ public class Cliente {
 	private Integer codigo;
 	private String nome;
 	private String cidade;
-	
+
 	public Cliente (Integer codigo, String nome, String cidade) {
 		
 		super();
