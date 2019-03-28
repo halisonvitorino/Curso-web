@@ -6,9 +6,10 @@
 
 <html>
 <f:view>
+
 	<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Agenda de Contatos</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Agenda de Contatos</title>
 	</head>
 
 	<body>
