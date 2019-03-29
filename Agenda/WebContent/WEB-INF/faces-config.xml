@@ -21,6 +21,14 @@
 		<managed-bean-class>com.algaworks.dwjsf.visao.ConsultaClienteBean</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>enderecoBean</managed-bean-name>
+		<managed-bean-class>com.algaworks.dwjsf.visao.EnderecoBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	
+	
 
 	<navigation-rule>
 		<from-view-id>/agendaContato.jsp</from-view-id>
@@ -30,8 +38,7 @@
 			<redirect />
 		</navigation-case>
 	</navigation-rule>
-
-
+	
 	<navigation-rule>
 		<from-view-id>/inscricao.jsp</from-view-id>
 		<navigation-case>
